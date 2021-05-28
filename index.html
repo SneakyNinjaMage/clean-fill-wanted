@@ -3,70 +3,112 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="node_modules/jquery/dist/jquery.slim.min.js" defer></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js" defer></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+  <script src="/js/scripts.js" defer></script>
 
   <!-- Additional CSS must be placed after Bootstrap CSS -->
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
   <link rel="stylesheet" href="/css/styles.css" />
 
   <title>Clean Fill Wanted</title>
-
-  <!-- SCRIPTS -->
-  <script defer src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script defer src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script defer src="js/scripts.js"></script>
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <header class="jumbotron jumbotron-fluid bg-primary my-0">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="fa fa-home fa-lg mb-2"></i></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#clean-navbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="clean-navbar">
-        <ul class="navbar-nav">
-          <li class="navbar-item active"><a class="nav-link" href="#">Home</a></li>
-          <li class="navbar-item "><a class="nav-link" href="#">Need Fill</a></li>
-          <li class="navbar-item "><a class="nav-link" href="#">Have Fill</a></li>
-          <li class="navbar-item "><a class="nav-link" href="#">FAQ</a></li>
-          <li class="navbar-item mr-1 "><a class="nav-link" href="#">About Us</a></li>
-          <li class="navbar-item"><button class="btn btn-md bg-info mr-3 my-1 text-black font-weight-bold">SIGN
-              UP</button>
-          </li>
-          <li class="navbar-item"><button class="btn btn-md bg-success my-1 text-white font-weight-bold">LOGIN</button>
-          </li>
-        </ul>
+      <div class="row">
+        <h1 class="col-6 col-5-sm text-white">
+          Clean Fill Wanted
+        </h1>
+        <div class="col-2-sm"></div>
+        <div class="col-6 col-5-sm">
+          <div class="container">
+            <div class="row">
+              <div class="col-md"></div>
+              <div class="col">
+                <div class="row">
+                  <div class="col"><a class="btn btn-secondary col-6 text-nowrap"><i class="fa fa-user-plus"></i> Sign Up</a></div>
+                </div>
+                <div class="row">
+                  <div class="col"><a class="btn btn-success col-6 text-nowrap"><i class="fa fa-sign-in"></i> Login</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Clean Fill Wanted</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="siteNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wantFill.html">Fill Wanted</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="giveFill.html">Fill to Give</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="how.html">How it Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="volumeCalc.html">Volume Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <div class="container-sm">
-    <div>
-      <div style="height: 100px">
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="card col-6">
+      <img class="card-img-top" src="/*fill to give image link*/" alt="fill to give alt text">
+      <div class="card-body"> Fill to Give </div>
     </div>
-
-    <div class="row">
-
-      <div class="col col-sm-6 offset-md-2 col-md-4 text-center pb-5">
-        <h1>Want Fill</h1>
-        <img src="/img/playHouse.jpg" width="auto" height="280px" />
-      </div>
-
-      <div class="col col-sm-6 offset-md-1 col-md-4 text-center">
-        <h1>Have Fill</h1>
-        <img src="/img/playTruck.jpg" width="auto" height="300px" />
-      </div>
-
+    <div class="card col-6">
+      <img class="card-img-top" src="/* fill wanted image link*/" alt="fill wanted alt text">
+      <div class="card-body"> Fill Wanted </div>
     </div>
   </div>
+</div>
 
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 col-sm-2 offset-1">
+        <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Fill Wanted</a></li>
+            <li><a href="#">Fill to Give</a></li>
+            <li><a href="">How it Works</a></li>
+            <li><a href="#">Volume Calculator</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+      </div>
+      <div class="col-sm-6 text-center">
+        <i class="fa fa-phone fa-lg text-primary"></i> 1-800-123-4567<br />
+        <i class="fa fa-envelope fa-lg text-primary"></i> cleanfillwanted@gmail.com
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 
